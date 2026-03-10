@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import styles from "./ContactModal.module.css"
+import { sendTelegramMessage } from "../../api/telegramApi"
 
 interface Props {
   isOpen: boolean
@@ -12,26 +13,43 @@ export const ContactModal = ({ isOpen, onClose }: Props) => {
   const form = useRef<HTMLFormElement>(null)
 
   const sendEmail = (e: React.FormEvent) => {
-    e.preventDefault()
+  e.preventDefault()
 
-    emailjs
-      .sendForm(
-        "service_ow42iqk", 
-        "template_95u5up6", 
-        form.current!,
-        "s4QpjkZsnZvsNOlwa" 
-      )
-      .then(
-        () => {
-          alert("Message sent!")
-          onClose()
-        },
-        (error) => {
-          console.error(error)
-          alert("Error sending message")
-        }
-      )
-  }
+  const formData = new FormData(form.current!)
+
+  const name = formData.get("user_name")
+  const email = formData.get("user_email")
+  const message = formData.get("message")
+
+  const text = `
+📩 New message from portfolio
+
+Name: ${name}
+Email: ${email}
+Message: ${message}
+`
+
+  emailjs
+    .sendForm(
+      "service_ow42iqk",
+      "template_95u5up6",
+      form.current!,
+      "s4QpjkZsnZvsNOlwa"
+    )
+    .then(
+      () => {
+
+        sendTelegramMessage(text)  
+
+        alert("Message sent!")
+        onClose()
+      },
+      (error) => {
+        console.error(error)
+        alert("Error sending message")
+      }
+    )
+}
 
   if (!isOpen) return null
 
