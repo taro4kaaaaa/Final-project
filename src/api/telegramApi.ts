@@ -1,7 +1,7 @@
 export const sendTelegramMessage = async (text: string) => {
 
-  const TOKEN = "8374618026:AAHXmOz7uM-QAAeQwir2hVQkMfwUcG47iic"
-  const CHAT_ID = "795872078"
+  const TOKEN = import.meta.env.VITE_TELEGRAM_TOKEN
+  const CHAT_ID = import.meta.env.VITE_TELEGRAM_CHAT_ID
 
   const url = `https://api.telegram.org/bot${TOKEN}/sendMessage`
 
