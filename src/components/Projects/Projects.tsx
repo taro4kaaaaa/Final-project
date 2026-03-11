@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Projects.module.css'
+import { useTranslation } from "react-i18next"
 import imggroup_44 from '../../assets/group-44.png'
 import imggroup_70 from '../../assets/group-70.png'
 import imggroup_50 from '../../assets/group-50.png'
@@ -10,18 +11,17 @@ interface ProjectsProps {
 }
 
 export const Projects: React.FC<ProjectsProps> = ({ className }) => {
+
+  const { t } = useTranslation()
+
   return (
     <div id = "projects" className={`${styles['project-1']} ${className || ''}`}>
-      <span className={styles['projects']}>PROJECTS</span>
+      <span className={styles['projects']}>{t("projects.title")}</span>
       
       {/* Group 1 */}
       <div className={styles['group1']}>
         <span className={styles['a-project-demonstrating']}>
-          A project demonstrating basic and advanced TypeScript features, as well as work with frameworks 
-          and libraries. It covers key topics from the course curriculum: introduction to TypeScript, basic 
-          type annotations, advanced typing techniques, and integration with modern frameworks and libraries. 
-          The project consists of a series of hands-on assignments that reflect practical understanding of 
-          TypeScript in real-world development scenarios.
+          {t("projects.object1")}
         </span>
         <div className={styles['tech-stack-logos']}>
           <a 
@@ -37,11 +37,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       {/* Group 2 */}
       <div className={styles['group2']}>
         <span className={styles['a-project-consisting']}>
-          A project consisting of coursework and hands-on assignments focused on React development. 
-          It covers key topics such as working with REST APIs, building and managing forms in React, 
-          using React Hooks (including useState, useEffect, and custom hooks), and interacting with 
-          the URL API. The project demonstrates practical skills in modern frontend development and 
-          reflects a solid understanding of React fundamentals and real-world integration patterns.
+          {t("projects.object2")}
         </span>
         <div className={styles['tech-stack-logos-1']}>
           <a 
@@ -57,12 +53,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       {/* Group 3 */}
       <div className={styles['group3']}>
         <span className={styles['a-project-consisting-1']}>
-          A project consisting of coursework and hands-on assignments focused on Docker containerization. 
-          It covers key topics such as working with Docker, writing Dockerfiles, and orchestrating 
-          multi-container applications with Docker Compose. The project demonstrates practical skills in 
-          containerization, including building custom images, managing containers, and defining services, 
-          networks, and volumes. The assignments reflect a solid understanding of modern DevOps practices 
-          and application deployment workflows.
+          {t("projects.object3")}
         </span>
         <div className={styles['tech-stack-logos-2']}>
           <a 
@@ -78,10 +69,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       {/* Group 4 */}
       <div className={styles['group4']}>
         <span className={styles['a-project-consisting-2']}>
-          A project consisting of coursework and hands-on assignments focused on core JavaScript concepts. 
-          It covers key topics such as asynchronous programming, callbacks, async/await, working with cookies, 
-          and destructuring. The project demonstrates practical skills in modern JavaScript development and 
-          reflects a solid understanding of asynchronous operations, data handling, and browser storage mechanisms.
+          {t("projects.object4")}
         </span>
         <div className={styles['tech-stack-logos-3']}>
            <a 

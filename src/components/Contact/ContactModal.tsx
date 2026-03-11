@@ -2,6 +2,7 @@ import { useRef } from "react"
 import emailjs from "@emailjs/browser"
 import styles from "./ContactModal.module.css"
 import { sendTelegramMessage } from "../../api/telegramApi"
+import { useTranslation } from "react-i18next"
 
 interface Props {
   isOpen: boolean
@@ -9,6 +10,8 @@ interface Props {
 }
 
 export const ContactModal = ({ isOpen, onClose }: Props) => {
+
+  const { t } = useTranslation()
 
   const form = useRef<HTMLFormElement>(null)
 
@@ -72,7 +75,7 @@ Message: ${message}
         </button>
 
         <h2 className={styles.title}>
-          Contact me
+          {t("contactmodal.title")}
         </h2>
 
         <form
@@ -84,7 +87,7 @@ Message: ${message}
           <input
             type="text"
             name="user_name"
-            placeholder="Name"
+            placeholder={t("contactmodal.placeholder1")}
             required
           />
 
@@ -97,7 +100,7 @@ Message: ${message}
 
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder={t("contactmodal.placeholder2")}
             required
           />
 
@@ -105,7 +108,7 @@ Message: ${message}
             type="submit"
             className={styles.sendButton}
           >
-            Send
+            {t("contactmodal.button")}
           </button>
 
         </form>

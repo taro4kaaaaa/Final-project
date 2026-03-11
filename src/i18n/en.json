@@ -1,0 +1,43 @@
+{
+  "home": {
+    "profile": "PROFILE",
+    "quote":  "Everything we do now, we have to be user-centric, not device-centric. — Bill Gates",
+    "annotation": "Photo by Andrew Maslov"
+
+  },
+
+  "main": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contacts",
+    "work1": "1  Montessori \n  Assistant Teacher \n  2021-2022",
+    "work2": "2  Compute \n Science Teacher \n Coder Programming \n School \n 2022-2025",
+    "work3": "3 Information \n Technology Engineer \n Belgorodsky Cement (JSC) \n 2022-2025"
+  },
+
+  "about": {
+    "title": "ABOUT ME",
+    "title1":"EDUCATION",
+    "description": "I'm a frontend developer with a keen eye for detail and a passion for building responsive,\n user-centered interfaces. With a strong foundation in modern JavaScript, React, and performance \n optimization, I turn designs into fast, accessible, and scalable web experiences. I bring structure, \nclean code, and a collaborative mindset to every project — and I'm always exploring new tools and \ntechnologies. Currently diving deeper into animation and interactive design to make interfaces not \njust functional, but engaging.",
+    "description1":"Belgorod State Technological University named after V.G. Shukhov \n Specialist degreeinFireSafety\n2020–2026 \n \n  Moscow University for Industry and Finance «Synergy» \n Frontend Development Program \n2025-2026"
+  }, 
+
+  "projects": {
+    "title": "Projects",
+    "object1": "A project demonstrating basic and advanced TypeScript features, as well as work with frameworks \nand libraries. It covers key topics from the course curriculum: introduction to TypeScript, basic \n type annotations, advanced typing techniques, and integration with modern frameworks and libraries. \n The project consists of a series of hands-on assignments that reflect practical understanding of \n TypeScript in real-world development scenarios.",
+    "object2": "A project consisting of coursework and hands-on assignments focused on React development. \n It covers key topics such as working with REST APIs, building and managing forms in React, \n using React Hooks (including useState, useEffect, and custom hooks), and interacting with \n the URL API. The project demonstrates practical skills in modern frontend development and \n reflects a solid understanding of React fundamentals and real-world integration patterns.",
+    "object3": "A project consisting of coursework and hands-on assignments focused on Docker containerization. \n It covers key topics such as working with Docker, writing Dockerfiles, and orchestrating \n multi-container applications with Docker Compose. The project demonstrates practical skills in \n containerization, including building custom images, managing containers, and defining services, \n networks, and volumes. The assignments reflect a solid understanding of modern DevOps practices \n and application deployment workflows.",
+    "object4": "A project consisting of coursework and hands-on assignments focused on core JavaScript concepts. \n It covers key topics such as asynchronous programming, callbacks, async/await, working with cookies, \n and destructuring. The project demonstrates practical skills in modern JavaScript development and \n reflects a solid understanding of asynchronous operations, data handling, and browser storage mechanisms."
+  },
+
+  "contact": {
+    "title": "CONTACTS"
+  },
+
+  "contactmodal":{
+    "title": "Contact me",
+    "button":"Send",
+    "placeholder1":"Name",
+    "placeholder2":"Masage"
+  }
+}

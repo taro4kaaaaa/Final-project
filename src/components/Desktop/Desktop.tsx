@@ -10,6 +10,7 @@ interface DesktopProps {
   className?: string
 }
 
+
 export const Desktop: React.FC<DesktopProps> = ({ className }) => {
   return (
     <div className={`${styles.desktopWrapper} ${className || ''}`}>

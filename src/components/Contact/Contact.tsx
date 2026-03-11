@@ -3,6 +3,7 @@ import { useState } from "react"
 import styles from './Contact.module.css'
 import imgfullsizerender_3_1 from '../../assets/fullsizerender-3-1.png'
 import { ContactModal } from "./ContactModal"
+import { useTranslation } from "react-i18next"
 
 interface ContactProps {
   className?: string
@@ -11,10 +12,11 @@ interface ContactProps {
 export const Contact: React.FC<ContactProps> = ({ className }) => {
 
   const [open, setOpen] = useState(false)
+  const { t } = useTranslation()
 
   return (
     <div id = "contacts" className={`${styles['contact-1']} ${className || ''}`}>
-        <span className={styles['contacts']}>CONTACTS</span>
+        <span className={styles['contacts']}>{t("contact.title")}</span>
 
         <a 
         href="https://t.me/taro4ka" 

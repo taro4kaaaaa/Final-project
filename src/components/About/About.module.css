@@ -69,7 +69,7 @@
   line-height: 1.6;
   text-align: left;
   color: rgba(0, 0, 0, 1);
-  white-space: normal;
+  white-space: pre-line;
   align-self: start;
   z-index: 2;
 }
