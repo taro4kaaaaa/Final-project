@@ -34,10 +34,10 @@ Message: ${message}
 
   emailjs
     .sendForm(
-      "service_ow42iqk",
-      "template_95u5up6",
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current!,
-      "s4QpjkZsnZvsNOlwa"
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(
       () => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from "react"
 import styles from './Contact.module.css'
 import imgfullsizerender_3_1 from '../../assets/fullsizerender-3-1.png'
@@ -72,7 +71,7 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           twitter
         </a>
 
-        <img className={styles['fullsizerender31']} src={imgfullsizerender_3_1} alt="fullsizerender31" />
+        <img className={styles['contact_photo']} src={imgfullsizerender_3_1} alt="contact photo" />
     </div>
   )
 }

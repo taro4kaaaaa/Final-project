@@ -6,7 +6,7 @@
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -25,7 +25,7 @@
   line-height: 1.2;
   text-align: center;
   white-space: nowrap;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   z-index: 10;
   align-self: start;
   justify-self: center;
@@ -41,7 +41,7 @@
   font-weight: 700;
   line-height: 1.4;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   z-index: 10;
   align-self: end;
 }
@@ -73,7 +73,7 @@
 
 
 /* Большое фото - использование Grid */
-.fd7ecbec263043b7 {
+.photo_profile {
   grid-column: 7 / 12;
   grid-row: 2 / 11;
   width: 100%;
@@ -93,7 +93,7 @@
   font-family: 'Inter', sans-serif;
   font-size: clamp(0.75rem, 1.2vw, 1.25rem);
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: var(--text-color);
   writing-mode: vertical-rl;
   white-space: nowrap;
   letter-spacing: 0.1em;
@@ -114,8 +114,8 @@
 }
 
 .languageSwitcher button {
-  background: transparent;
-  border: 2px solid black;
+  background: var(--button-bg);
+  border: 2px solid var(--button-border);
   padding: 6px 12px;
   font-weight: 600;
   cursor: pointer;
@@ -123,8 +123,23 @@
 }
 
 .languageSwitcher button:hover {
-  background: black;
-  color: white;
+  background: var(--button-bg);
+  color: var(--button-text);
+}
+
+.topButtons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.topButtons button {
+  padding: 6px 10px;
+  border: 1px solid var(--button-border);
+  background: var(--button-bg);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
@@ -160,7 +175,7 @@
   }
 
   /* Большое фото */
-  .fd7ecbec263043b7 {
+  .photo_profile {
     grid-column: 2 / 8;
     grid-row: 3 / 11;
     object-position: center;
@@ -209,7 +224,7 @@
     display: none;
   }
 
-  .fd7ecbec263043b7 {
+  .photo_profile {
     grid-column: 1 / 5;
     grid-row: 2 / 8;
     width: 100%;

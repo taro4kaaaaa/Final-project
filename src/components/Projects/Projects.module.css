@@ -6,7 +6,7 @@
   max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
-  background-color: inherit;
+  background: var(--bg-color);
   position: relative;
 }
 
@@ -19,7 +19,7 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: center;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   align-self: center;
   justify-self: start;
   margin: 0;
@@ -37,7 +37,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   border-radius: 16px;
   z-index: 2;
 }
@@ -54,7 +54,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   border-radius: 16px;
   z-index: 2;
 }
@@ -71,7 +71,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   border-radius: 16px;
   z-index: 2;
 }
@@ -88,7 +88,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   border-radius: 16px;
   z-index: 2;
 }
@@ -105,7 +105,7 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   overflow-y: auto;
   padding: 10px;
   box-sizing: border-box;
@@ -120,7 +120,7 @@
   width: 17.1%;
   height: 100%;
   overflow: hidden;
-  background-color: inherit;
+  background: var(--bg-color);
   border-radius: 16px;
   display: flex;
   justify-content: center;
@@ -128,10 +128,10 @@
 }
 
 /* Логотипы */
-.group44,
-.group68,
-.group70,
-.group50 {
+.ts,
+.react,
+.docker,
+.js {
   position: absolute;
   width: 55.7%;
   height: 55.7%;
@@ -141,31 +141,31 @@
 }
 
 /* Позиционирование логотипов */
-.group44 {
+.ts {
   left: 22.4%;
   top: 22.4%;
 }
 
-.group68 {
+.react {
   left: 22.4%;
   top: 22.4%;
 }
 
-.group70 {
+.docker {
   left: 21.9%;
   top: 21.9%;
 }
 
-.group50 {
+.js {
   left: 22.4%;
   top: 28.1%;
 }
 
 /* Hover эффекты */
-.group44:hover,
-.group68:hover,
-.group70:hover,
-.group50:hover {
+.ts:hover,
+.react:hover,
+.docker:hover,
+.js:hover {
   transform: scale(1.3);
 }
 
@@ -240,10 +240,10 @@
   }
 
   /* Логотипы */
-  .group44,
-  .group68,
-  .group70,
-  .group50 {
+  .ts,
+  .react,
+  .docker,
+  .js {
     width: 60%;
     height: 60%;
   }
@@ -339,10 +339,10 @@
   }
 
   /* Логотипы */
-  .group44,
-  .group68,
-  .group70,
-  .group50 {
+  .ts,
+  .react,
+  .docker,
+  .js {
     width: 60px;
     height: 60px;
     position: relative; /* Меняем с absolute на relative */
@@ -353,10 +353,10 @@
   }
 
   /* Hover эффекты для мобильных */
-  .group44:hover,
-  .group68:hover,
-  .group70:hover,
-  .group50:hover {
+  .ts:hover,
+  .react:hover,
+  .d:hover,
+  .js:hover {
     transform: scale(1.1);
   }
 }

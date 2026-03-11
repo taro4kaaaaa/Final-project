@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Projects.module.css'
 import { useTranslation } from "react-i18next"
 import imggroup_44 from '../../assets/group-44.png'
@@ -29,7 +28,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img className={styles['group44']} src={imggroup_44} alt="group44" />
+            <img className={styles['ts']} src={imggroup_44} alt="TS" />
           </a>
         </div>
       </div>
@@ -45,7 +44,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img className={styles['group70']} src={imggroup_70} alt="group70" />
+            <img className={styles['react']} src={imggroup_70} alt="React" />
           </a>
         </div>
       </div>
@@ -61,7 +60,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img className={styles['group50']} src={imggroup_50} alt="group50" />
+            <img className={styles['docker']} src={imggroup_50} alt="Docker" />
           </a>
         </div>
       </div>
@@ -77,7 +76,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             target="_blank" 
             rel="noopener noreferrer"
           >
-            <img className={styles['group68']} src={imggroup_68} alt="group68" />
+            <img className={styles['js']} src={imggroup_68} alt="JS" />
           </a>
 
         </div>

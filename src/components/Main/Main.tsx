@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Main.module.css'
 import { useTranslation } from "react-i18next"
 import imgslice_4_1 from '../../assets/slice-4-1.png'
@@ -37,9 +36,9 @@ export const Main: React.FC<MainProps> = ({ className }) => {
       <a href="#about" className={styles['about-me']}> {t("main.about")}</a>
       <a href="#projects" className={styles['project']}> {t("main.projects")}</a>
       <a href="#contacts" className={styles['contact']}> {t("main.contact")}</a>
-      <img className={styles['slice41']} src={imgslice_4_1} alt="slice41" />
-      <img className={styles['slice51']} src={imgslice_5_1} alt="slice51" />
-      <img className={styles['slice61']} src={imgslice_6_1} alt="slice61" />
+      <img className={styles['photo_part1']} src={imgslice_4_1} alt="Photo part 1" />
+      <img className={styles['photo_part2']} src={imgslice_5_1} alt="Photo part 2" />
+      <img className={styles['photo_part3']} src={imgslice_6_1} alt="Photo part 3" />
     </div>
   )
 }

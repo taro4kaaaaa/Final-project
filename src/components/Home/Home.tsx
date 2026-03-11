@@ -1,5 +1,5 @@
-import React from 'react'
 import { useTranslation } from "react-i18next"
+import { ThemeButton } from "../ThemeButton/ThemeButton"
 import styles from './Home.module.css'
 import imgfd7ecbec_2630_43b7_bf60_a6768e180b2d_1 from '../../assets/fd7ecbec-2630-43b7-bf60-a6768e180b2d-1.png'
 import img1 from '../../assets/Ellipse1.png'
@@ -22,6 +22,8 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
       <div className={styles.languageSwitcher}>
         <button onClick={() => i18n.changeLanguage("en")}>EN</button>
         <button onClick={() => i18n.changeLanguage("ru")}>RU</button>
+
+        <ThemeButton />
       </div>
 
       <span className={styles.profile}>
@@ -33,14 +35,14 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
       </span>
 
       <div className={styles.ellipsesContainer}>
-        <img src={img1} alt="ellipse1" className={styles.ellipse1} />
-        <img src={img2} alt="ellipse2" className={styles.ellipse2} />
-        <img src={img3} alt="ellipse3" className={styles.ellipse3} />
-        <img src={img4} alt="ellipse4" className={styles.ellipse4} />
+        <img src={img1} alt="the design element" className={styles.ellipse1} />
+        <img src={img2} alt="the design element" className={styles.ellipse2} />
+        <img src={img3} alt="the design element" className={styles.ellipse3} />
+        <img src={img4} alt="the design element" className={styles.ellipse4} />
       </div>
 
       <img
-        className={styles.fd7ecbec263043b7}
+        className={styles.photo_profile}
         src={imgfd7ecbec_2630_43b7_bf60_a6768e180b2d_1}
         alt="profile"
       />

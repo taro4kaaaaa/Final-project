@@ -6,7 +6,7 @@
   max-width: 1920px;
   height: 100vh;
   margin: 0 auto;
-  background-color: inherit;
+  background: var(--bg-color);
   overflow: hidden;
   scroll-margin-top: -20px;
 }
@@ -22,7 +22,7 @@
   line-height: 1.2;
   text-align: left;
   white-space: nowrap;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   align-self: start;
   z-index: 2;
 }
@@ -37,7 +37,7 @@
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   align-self: start;
   z-index: 2;
 }
@@ -52,7 +52,7 @@
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   white-space: normal;
   align-self: start;
   z-index: 2;
@@ -68,14 +68,14 @@
   font-weight: 400;
   line-height: 1.6;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: var(--text-color);
   white-space: pre-line;
   align-self: start;
   z-index: 2;
 }
 
 /* Фото */
-.fullsizerender21 {
+.about_photo {
   margin-top: -30px;
   grid-column: 2 / 8;
   grid-row: 6 / 13;
@@ -86,10 +86,7 @@
   z-index: 1;
 }
 
-/* Скрываем ненужный класс */
-.text {
-  display: none;
-}
+
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .about {
@@ -140,7 +137,7 @@
   }
 
   /* Фото - увеличиваем и меняем позицию */
-  .fullsizerender21 {
+  .about_photo {
     grid-column: 2 / 8;
     grid-row: 4 / 9;
     margin-top: 0;
@@ -186,7 +183,7 @@
   }
 
   /* Фото */
-  .fullsizerender21 {
+  .about_photo {
     grid-column: 1 / 5;
     grid-row: 5 / 8;
     margin-top: 20px;

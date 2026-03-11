@@ -4,7 +4,10 @@ import { initReactI18next } from "react-i18next"
 import en from "./en.json"
 import ru from "./ru.json"
 
-const savedLanguage = localStorage.getItem("lang")
+const savedLanguage = localStorage.getItem("lang") || "en"
+
+// сразу устанавливаем lang в html
+document.documentElement.lang = savedLanguage
 
 i18n
   .use(initReactI18next)
@@ -18,7 +21,7 @@ i18n
       }
     },
 
-    lng: savedLanguage || "en",
+    lng: savedLanguage,
 
     fallbackLng: "en",
 
@@ -26,5 +29,11 @@ i18n
       escapeValue: false
     }
   })
+
+// меняем lang при переключении
+i18n.on("languageChanged", (lng) => {
+  document.documentElement.lang = lng
+  localStorage.setItem("lang", lng)
+})
 
 export default i18n
