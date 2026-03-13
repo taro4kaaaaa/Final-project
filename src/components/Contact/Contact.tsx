@@ -38,7 +38,7 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
   }, [])
 
   return (
-    <main 
+    <div 
     ref={sectionRef}
     id = "contacts" 
     className={`${styles['contact-1']} ${styles["hidden-blur"]} ${className || ''}`}
@@ -51,11 +51,11 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
         rel="noopener noreferrer"
         className={styles['telegram']}
         >
-          telegram
+          Telegram
         </a>
 
         <p className={styles['email']} onClick={() => setOpen(true)}>
-        email
+        Email
         </p>
 
         <ContactModal
@@ -69,7 +69,7 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           rel="noopener noreferrer"
           className={styles['max']}
         >
-          max
+          Max
         </a>
 
         <a
@@ -78,7 +78,7 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           rel="noopener noreferrer"
           className={styles['whatsapp']}
         >
-          whats`app
+          WhatsApp
         </a>
 
         <a
@@ -87,7 +87,7 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           rel="noopener noreferrer"
           className={styles['instagram']}
         >
-          instagram
+          Instagram
         </a>
 
         <a
@@ -96,10 +96,10 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           rel="noopener noreferrer"
           className={styles['twitter']}
         >
-          twitter
+          Twitter
         </a>
 
         <img className={styles['contact_photo']} src={imgfullsizerender_3_1} alt="contact photo" />
-    </main>
+    </div>
   )
 }

@@ -47,27 +47,12 @@
 }
 
 /* Контейнер для изображений-кругов */
-.ellipsesContainer {
-  position: absolute;
-  left: 3.39%;
-  top: 9.54%;
-  width: 7.24%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 5;
-}
-
-/* Стили для всех изображений-кругов */
-.ellipse1,
-.ellipse2,
-.ellipse3,
-.ellipse4 {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
+.ellipse1 {
+  grid-column: 1 / 4;
+  grid-row: 2 / 11;
+  width: 140px;
+  margin-left: 50px;
+  margin-top: -20px;
 }
 
 
@@ -170,7 +155,7 @@
   }
 
   /* Контейнер для кругов */
-  .ellipsesContainer {
+  .ellipse1 {
     display: none;
   }
 
@@ -221,7 +206,7 @@
     z-index: 20;
   }
 
-  .ellipsesContainer {
+  .ellipse1 {
     display: none;
   }
 
@@ -241,7 +226,7 @@
   .languageSwitcher {
   top: 10px;
   right: -10px;
-  scale: 70%;
+  transform: scale(0.7)
   }
 
 }

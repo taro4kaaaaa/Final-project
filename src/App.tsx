@@ -1,4 +1,3 @@
-import React from 'react'
 import { Desktop } from './components/Desktop/Desktop'
 import './App.css'
 

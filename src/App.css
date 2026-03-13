@@ -3,5 +3,5 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Возвращаем flex-start */
-  background-color: #f5f5f5;
+  background-color: var(--bg-color);
 }

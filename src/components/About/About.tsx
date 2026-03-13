@@ -35,7 +35,7 @@ export const About: React.FC<AboutProps> = ({ className }) => {
   }, [])
 
   return (
-    <main
+    <div
     ref={sectionRef}
     id = "about"
     className={`${styles['about']} ${styles["hidden-blur"]} ${className || ''}`}
@@ -50,6 +50,6 @@ export const About: React.FC<AboutProps> = ({ className }) => {
       </p>
 
       <img className={styles['about_photo']} src={imgfullsizerender_2_1} alt="about photo" />
-    </main>
+    </div>
   )
 }

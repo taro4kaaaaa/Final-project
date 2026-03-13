@@ -37,7 +37,7 @@ export const Main: React.FC<MainProps> = ({ className }) => {
   }, [])
 
   return (
-   <main
+   <div
   ref={sectionRef}
   className={`${styles.main} ${styles["hidden-blur"]} ${className || ''}`}
   >
@@ -74,6 +74,6 @@ export const Main: React.FC<MainProps> = ({ className }) => {
     <img className={styles['photo_part2']} src={imgslice_5_1} alt="Photo part 2" />
     <img className={styles['photo_part3']} src={imgslice_6_1} alt="Photo part 3" />
 
-  </main>
+  </div>
   )
 }

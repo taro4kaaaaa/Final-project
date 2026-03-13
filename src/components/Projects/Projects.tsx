@@ -34,7 +34,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
 }, [])
 
   return (
-    <main id = "projects" className={`${styles['project-1']} ${className || ''}`}>
+    <div id = "projects" className={`${styles['project-1']} ${className || ''}`}>
       <h2 className={styles['projects']}>{t("projects.title")} </h2>
       
       {/* Group 1 */}
@@ -105,6 +105,6 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
 
         </div>
       </section>
-    </main>
+    </div>
   )
 }
