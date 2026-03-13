@@ -38,12 +38,12 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
   }, [])
 
   return (
-    <div 
+    <main 
     ref={sectionRef}
     id = "contacts" 
     className={`${styles['contact-1']} ${styles["hidden-blur"]} ${className || ''}`}
     >
-        <span className={styles['contacts']}>{t("contact.title")}</span>
+        <h2 className={styles['contacts']}>{t("contact.title")}</h2>
 
         <a 
         href="https://t.me/taro4ka" 
@@ -54,9 +54,9 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
           telegram
         </a>
 
-        <span className={styles['email']} onClick={() => setOpen(true)}>
+        <p className={styles['email']} onClick={() => setOpen(true)}>
         email
-        </span>
+        </p>
 
         <ContactModal
           isOpen={open}
@@ -100,6 +100,6 @@ export const Contact: React.FC<ContactProps> = ({ className }) => {
         </a>
 
         <img className={styles['contact_photo']} src={imgfullsizerender_3_1} alt="contact photo" />
-    </div>
+    </main>
   )
 }

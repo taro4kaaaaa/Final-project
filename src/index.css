@@ -44,9 +44,7 @@ body {
   color: var(--text-color);
 }
 
-section {
-  border-bottom: 1px solid black;
-}
+
 
 .container {
   max-width: 1400px;

@@ -35,20 +35,21 @@ export const About: React.FC<AboutProps> = ({ className }) => {
   }, [])
 
   return (
-    <div
+    <main
     ref={sectionRef}
     id = "about"
     className={`${styles['about']} ${styles["hidden-blur"]} ${className || ''}`}
     >
-      <span className={styles['about-me-1']}>{t("about.title")}</span>
-      <span className={styles['education']}>{t("about.title1")}</span>
-      <span className={styles['im-afrontend']}>
+      <h2 className={styles['about-me-1']}>{t("about.title")}</h2>
+      <h2 className={styles['education']}>{t("about.title1")}</h2>
+      <p className={styles['im-afrontend']}>
         {t("about.description")}
-      </span>
-      <span className={styles['belgorod-state-technological']}>
+      </p>
+      <p className={styles['belgorod-state-technological']}>
         {t("about.description1")}
-      </span>
+      </p>
+
       <img className={styles['about_photo']} src={imgfullsizerender_2_1} alt="about photo" />
-    </div>
+    </main>
   )
 }

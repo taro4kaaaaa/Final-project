@@ -38,6 +38,12 @@
   z-index: 2;
 }
 
+.main section {
+  /* Убираем возможные линии/границы */
+  border: none;
+  outline: none;
+}
+
 /* 1 Montessori Assistant */
 .montessori-assistant {
   grid-column: 2 / 5;    

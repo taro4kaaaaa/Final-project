@@ -16,41 +16,34 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
   const { t, i18n } = useTranslation()
 
   return (
-    <div className={`${styles.home} ${className || ''}`}>
-      
-      {/* 🔹 Переключатель языка */}
-      <div className={styles.languageSwitcher}>
+    <main className={`${styles.home} ${className || ''}`}>
+      <header className={styles.languageSwitcher}>
         <button onClick={() => i18n.changeLanguage("en")}>EN</button>
         <button onClick={() => i18n.changeLanguage("ru")}>RU</button>
-
         <ThemeButton />
-      </div>
-
-      <span className={styles.profile}>
-        {t("home.profile")}
-      </span>
-
-      <span className={styles['everything-we-do']}>
-        {t("home.quote")}
-      </span>
-
-      <div className={styles.ellipsesContainer}>
-        <img src={img1} alt="the design element" className={styles.ellipse1} />
-        <img src={img2} alt="the design element" className={styles.ellipse2} />
-        <img src={img3} alt="the design element" className={styles.ellipse3} />
-        <img src={img4} alt="the design element" className={styles.ellipse4} />
-      </div>
-
-      <img
-        className={styles.photo_profile}
-        src={imgfd7ecbec_2630_43b7_bf60_a6768e180b2d_1}
-        alt="profile"
-      />
-
-      <span className={styles['photo-by-andrew']}>
-        {t("home.annotation")}
-      </span>
-
-    </div>
+      </header>
+          <h1 className={styles.profile}>
+            {t("home.profile")}
+          </h1>
+          <p className={styles['everything-we-do']}>
+            {t("home.quote")}
+          </p>
+        <section className={styles.ellipsesContainer}>
+          <img src={img1} alt="design element" className={styles.ellipse1} />
+          <img src={img2} alt="design element" className={styles.ellipse2} />
+          <img src={img3} alt="design element" className={styles.ellipse3} />
+          <img src={img4} alt="design element" className={styles.ellipse4} />
+        </section>
+          <img
+            className={styles.photo_profile}
+            src={imgfd7ecbec_2630_43b7_bf60_a6768e180b2d_1}
+            alt="profile"
+          />
+      <footer>
+        <span className={styles['photo-by-andrew']}>
+          {t("home.annotation")}
+        </span>
+      </footer>
+    </main>
   )
 }

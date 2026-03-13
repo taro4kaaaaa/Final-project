@@ -37,35 +37,43 @@ export const Main: React.FC<MainProps> = ({ className }) => {
   }, [])
 
   return (
-   <div
-    ref={sectionRef}
-    className={`${styles.main} ${styles["hidden-blur"]} ${className || ''}`}
-    >
-      <span className={styles['im-konstantin-tarasov']}>
-        I'M KONSTANTIN TARASOV<br />FRONTEND-DEVELOPER
-      </span>
-      
-      {/* Блок 1 - Montessori Assistant Teacher */}
-      <span className={styles['montessori-assistant']}>
-        {t("main.work1")}
-      </span>
-      
-      {/* Блок 2 - Computer Science Teacher */}
-      <span className={styles['computer-science']}>
-         {t("main.work2")}
-      </span>
-      
-      {/* Блок 3 - Information Technology Engineer */}
-      <span className={styles['information-technology']}>
-           {t("main.work3")}
-      </span>
-      
-      <a href="#about" className={styles['about-me']}> {t("main.about")}</a>
-      <a href="#projects" className={styles['project']}> {t("main.projects")}</a>
-      <a href="#contacts" className={styles['contact']}> {t("main.contact")}</a>
-      <img className={styles['photo_part1']} src={imgslice_4_1} alt="Photo part 1" />
-      <img className={styles['photo_part2']} src={imgslice_5_1} alt="Photo part 2" />
-      <img className={styles['photo_part3']} src={imgslice_6_1} alt="Photo part 3" />
-    </div>
+   <main
+  ref={sectionRef}
+  className={`${styles.main} ${styles["hidden-blur"]} ${className || ''}`}
+  >
+
+    <header className={styles['im-konstantin-tarasov']}>
+      I'M KONSTANTIN TARASOV<br />FRONTEND-DEVELOPER
+    </header>
+
+    <section className={styles['montessori-assistant']}>
+      {t("main.work1")}
+    </section>
+
+    <section className={styles['computer-science']}>
+      {t("main.work2")}
+    </section>
+
+    <section className={styles['information-technology']}>
+      {t("main.work3")}
+    </section>
+
+    <a href="#about" className={styles['about-me']}>
+      {t("main.about")}
+    </a>
+
+    <a href="#projects" className={styles['project']}>
+      {t("main.projects")}
+    </a>
+
+    <a href="#contacts" className={styles['contact']}>
+      {t("main.contact")}
+    </a>
+
+    <img className={styles['photo_part1']} src={imgslice_4_1} alt="Photo part 1" />
+    <img className={styles['photo_part2']} src={imgslice_5_1} alt="Photo part 2" />
+    <img className={styles['photo_part3']} src={imgslice_6_1} alt="Photo part 3" />
+
+  </main>
   )
 }

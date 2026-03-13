@@ -11,7 +11,7 @@
     "projects": "Projects",
     "contact": "Contacts",
     "work1": "1        Montessori \n                  Assistant Teacher \n  2021-2022",
-    "work2": "2         Compute \n                      Science Teacher \nCoder         Programming \n          School \n  2022-2025",
+    "work2": "2         Compute \n                             Science            Teacher \nCoder         Programming \n          School \n  2022-2025",
     "work3": "3                    Information \n Technology      Engineer \n              Belgorodsky Cement (JSC) \n 2022-2025"
   },
 
@@ -23,7 +23,7 @@
   }, 
 
   "projects": {
-    "title": "Projects",
+    "title": "PROJECTS",
     "object1": "A project demonstrating basic and advanced TypeScript features, as well as work with frameworks \nand libraries. It covers key topics from the course curriculum: introduction to TypeScript, basic \n type annotations, advanced typing techniques, and integration with modern frameworks and libraries. \n The project consists of a series of hands-on assignments that reflect practical understanding of \n TypeScript in real-world development scenarios.",
     "object2": "A project consisting of coursework and hands-on assignments focused on React development. \n It covers key topics such as working with REST APIs, building and managing forms in React, \n using React Hooks (including useState, useEffect, and custom hooks), and interacting with \n the URL API. The project demonstrates practical skills in modern frontend development and \n reflects a solid understanding of React fundamentals and real-world integration patterns.",
     "object3": "A project consisting of coursework and hands-on assignments focused on Docker containerization. \n It covers key topics such as working with Docker, writing Dockerfiles, and orchestrating \n multi-container applications with Docker Compose. The project demonstrates practical skills in \n containerization, including building custom images, managing containers, and defining services, \n networks, and volumes. The assignments reflect a solid understanding of modern DevOps practices \n and application deployment workflows.",

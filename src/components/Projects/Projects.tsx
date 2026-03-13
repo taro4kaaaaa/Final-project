@@ -34,15 +34,15 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
 }, [])
 
   return (
-    <div id = "projects" className={`${styles['project-1']} ${className || ''}`}>
-      <span className={styles['projects']}>{t("projects.title")} </span>
+    <main id = "projects" className={`${styles['project-1']} ${className || ''}`}>
+      <h2 className={styles['projects']}>{t("projects.title")} </h2>
       
       {/* Group 1 */}
-      <div className={`${styles.group1} ${styles.projectItem}`}
+      <section className={`${styles.group1} ${styles.projectItem}`}
       style={{ transitionDelay: "0.1s" }}>
-        <span className={styles['a-project-demonstrating']} >
+        <p className={styles['a-project-demonstrating']} >
           {t("projects.object1")}
-        </span>
+        </p>
         <div className={styles['tech-stack-logos']}>
           <a 
             href="https://github.com/taro4kaaaaa/TypeScript" 
@@ -52,14 +52,14 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <img className={styles['ts']} src={imggroup_44} alt="TS" />
           </a>
         </div>
-      </div>
+      </section>
 
       {/* Group 2 */}
-      <div className={`${styles.group2} ${styles.projectItem}`}
+      <section className={`${styles.group2} ${styles.projectItem}`}
       style={{ transitionDelay: "0.3s" }}>
-        <span className={styles['a-project-consisting']}>
+        <p className={styles['a-project-consisting']}>
           {t("projects.object2")}
-        </span>
+        </p>
         <div className={styles['tech-stack-logos-1']}>
           <a 
             href="https://github.com/taro4kaaaaa/dz4" 
@@ -69,14 +69,14 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <img className={styles['react']} src={imggroup_70} alt="React" />
           </a>
         </div>
-      </div>
+      </section>
 
       {/* Group 3 */}
-      <div className={`${styles.group3} ${styles.projectItem}`}
+      <section className={`${styles.group3} ${styles.projectItem}`}
       style={{ transitionDelay: "0.5s" }}>
-        <span className={styles['a-project-consisting-1']}>
+        <p className={styles['a-project-consisting-1']}>
           {t("projects.object3")}
-        </span>
+        </p>
         <div className={styles['tech-stack-logos-2']}>
           <a 
             href="https://github.com/taro4kaaaaa" 
@@ -86,14 +86,14 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <img className={styles['docker']} src={imggroup_50} alt="Docker" />
           </a>
         </div>
-      </div>
+      </section>
 
       {/* Group 4 */}
-      <div className={`${styles.group4} ${styles.projectItem}`}
+      <section className={`${styles.group4} ${styles.projectItem}`}
       style={{ transitionDelay: "0.7s" }}>
-        <span className={styles['a-project-consisting-2']}>
+        <p className={styles['a-project-consisting-2']}>
           {t("projects.object4")}
-        </span>
+        </p>
         <div className={styles['tech-stack-logos-3']}>
            <a 
             href="https://github.com/taro4kaaaaa" 
@@ -104,7 +104,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
           </a>
 
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
