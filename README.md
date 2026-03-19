@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 📌 Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Интерактивное портфолио-приложение, демонстрирующее мои навыки во frontend-разработке. Основной фокус — создание масштабируемой архитектуры, работа с состоянием и построение удобного пользовательского интерфейса.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Демо
 
-## React Compiler
+👉 [Открыть проект](ССЫЛКА_НА_DEPLOY)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Стек
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React** — компонентный подход и переиспользуемость
+- **TypeScript** — строгая типизация и снижение количества ошибок
+- **CSS / SCSS** — стилизация и адаптивный дизайн
+- **Git** — контроль версий и управление разработкой
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 Архитектура проекта
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Проект построен с разделением ответственности:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `components/` — переиспользуемые UI-компоненты  
+- `pages/` — страницы приложения  
+- `hooks/` — кастомные хуки с бизнес-логикой  
+- `services/` — работа с API и внешними данными  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Подход позволяет:
+- упростить поддержку кода  
+- масштабировать приложение  
+- переиспользовать логику  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## ⚡ Основной функционал
+
+- отображение информации о проектах и навыках  
+- адаптивный интерфейс  
+- навигация между разделами  
+- обработка пользовательских действий  
+- динамическая отрисовка контента  
+
+---
+
+## 💣 Основные решения и сложности
+
+- Разделение UI и бизнес-логики через кастомные хуки  
+- Организация структуры проекта для масштабируемости  
+- Работа с асинхронными данными (если используется API)  
+- Управление состоянием компонентов  
+
+---
+
+## 📈 Возможные улучшения
+
+- добавление unit-тестов  
+- оптимизация производительности  
+- улучшение UX  
+- интеграция backend или CMS  
+
+---
+
+## 🛠️ Установка и запуск
+
+```bash
+npm install
+npm run dev
