@@ -6,7 +6,7 @@
 
 ## 🚀 Демо
 
-👉 [Открыть проект](ССЫЛКА_НА_DEPLOY)
+👉 [portfoliofrontenddevelooper.vercel.app](https://portfoliofrontenddevelooper.vercel.app/)
 
 ---
 
