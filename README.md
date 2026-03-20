@@ -8,7 +8,7 @@
 
 ## 🚀 Демо
 
-👉 https://portfoliofrontenddevelooper.vercel.app/
+👉 https://portfolio-mu-ebon-97.vercel.app/
 
 ---
 
