@@ -18,19 +18,19 @@
 
 ## 📸 Screenshots
 
-### 🏠 Домашняя страница
+### 🖥️ Домашняя страница
 ![Home](./public/home.png)
 
 ### 🏠 Главная страница
 ![Main](./public/main.png)
 
-### 🏠 Обо мне 
+### 👨‍💻 Обо мне 
 ![About](./public/about.png)
 
-### 🏠 Проекты
+### 💡  Проекты
 ![Projects](./public/projects.png)
 
-### 🏠 Контакты 
+###  ✉️ Контакты 
 ![Contacts](./public/contacts.png)
 
 ---
