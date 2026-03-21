@@ -21,7 +21,7 @@
 ![Home](./public/home.png)
 ![Main](./public/main.png)
 ![About](./public/about.png)
-![Project](./public/projecs.png)
+![Projects](./public/projects.png)
 ![Contacts](./public/contacts.png)
 
 ---
