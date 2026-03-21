@@ -19,20 +19,19 @@
 ## 📸 Screenshots
 
 ### 🖥️ Домашняя страница
-![Home](./public/home.png)
+<img src="./public/home.png"  width="400"/>
 
 ### 🏠 Главная страница
-![Main](./public/main.png)
+<img src="./public/main.png"  width="400"/>
 
 ### 👨‍💻 Обо мне 
-![About](./public/about.png)
+<img src="./public/about.png"  width="400"/>
 
 ### 💡  Проекты
-![Projects](./public/projects.png)
+<img src="./public/projects.png"  width="400"/>
 
 ###  ✉️ Контакты 
-![Contacts](./public/contacts.png)
-
+<img src="./public/contacts.png"  width="400"/>
 ---
 
 ## ✨ Features
