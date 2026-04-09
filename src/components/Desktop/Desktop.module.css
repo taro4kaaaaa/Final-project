@@ -47,3 +47,12 @@
   background: var(--button-bg);
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 767px) {
+  .languageSwitcher{
+    top: 0px;
+    right: -5px;
+    scale: 70%;
+  }
+}
